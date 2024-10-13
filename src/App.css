@@ -1,0 +1,118 @@
+.over {
+    overflow: hidden;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to Blue Gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    animation: backgroundScroll 10s infinite alternate; /* Animating background */
+}
+
+@keyframes backgroundScroll {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    max-width: 1200px;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Soft gradient for the main area */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow transition */
+}
+
+.main:hover {
+    transform: scale(1.05); /* Enlarges slightly on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Shadow deepens on hover */
+}
+
+h1 {
+    color: #2575fc; /* Bright blue for the title */
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Text hover effect */
+}
+
+h1:hover {
+    color: #6a11cb; /* Color changes on hover */
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0); /* Subtle gradient background for columns */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.col:hover {
+    background-color: #f1c40f; /* Interactive color change on hover */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7); /* Grey gradient */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.row:hover {
+    transform: scale(1.03); /* Scales on hover for an interactive feel */
+}
+
+button {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c); /* Vibrant gradient for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Reverse gradient on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px); /* Lift up effect on hover */
+}
+
+input, select {
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #2575fc; /* Changes border color on focus */
+}
+
